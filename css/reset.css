@@ -50,3 +50,6 @@ a {
 button {
 	border: none;
 }
+textarea {
+	resize: none;
+}
