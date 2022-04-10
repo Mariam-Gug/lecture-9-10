@@ -242,7 +242,14 @@ header::after {
 .image-wrapper {
     margin-top: 50px;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+}
+.image-wrap {
+    width: 28%;
+}
+.image-wrap img {
+    width: 100%;
 }
 /* footer */
 .footer-wrapper {
