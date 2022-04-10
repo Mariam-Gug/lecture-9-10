@@ -154,6 +154,12 @@ header {
     height: 288px;
     width: 100%;
     padding: 20px;
+    background-color: #F8F8F8;
+    font: 14px 'Poppins', sans-serif;
+    border: 2px solid #E8E8E8;
+}
+#user-info-descr::placeholder {
+    color: #CECECE;
 }
 .right-inp {
     width: 32%;
@@ -161,7 +167,23 @@ header {
     flex-flow: column;
     justify-content: space-between;
 }
-.left-column-item {
+.input-block {
     height: 60px;
     padding: 20px;
+    background-color: #F8F8F8;
+    border: 2px solid #E8E8E8;
+}
+.input-block::placeholder {
+    font: 13px 'Poppins', sans-serif;
+    color: #CECECE;
+}
+.send-button {
+    background-color: #5863F8;
+    color: #fff;
+    font: 14px 'Poppins', sans-serif;
+}
+.paper-plane {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 20px;
 }
