@@ -1,0 +1,121 @@
+
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+.header-wrapper {
+    top: 0;
+    left: 0;
+    max-width: 1130px;
+    width: 90%;
+    height: 60px;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font: 14px 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-wrapper {
+    width: 50%;
+}
+.list {
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-a {
+    font: 12px 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 0 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.active {
+    color: #5863F8;
+}
+.burger-bar {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+}
+/* top section */
+.bg-img {
+    position: relative;
+    background-image: url(../img/header-bg.jpg);
+    height: 324px;
+    width: 100%;
+}
+.bg-img::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .6;
+}
+.contact-text-wrapper {
+    position: absolute;
+    top: 145px;
+    width: 100%;
+    z-index: 2;
+}
+.contact-text {
+    max-width: 1130px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+.contact-text h2 {
+    font: 42px 'Poppins', sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.contact-text ul {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    font: 14px 'Poppins', sans-serif;
+}
+.contact-text a {
+    font: 14px 'Poppins', sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+}
+.devider::after {
+    content: '';
+    display: inline-block;
+    height: 19px;
+    width: 1px;
+    margin: 0 14px;
+    background-color: #fff;
+}
+.map {
+    position: relative;
+    height: 286px;
+    max-width: 1130px;
+    width: 90%;
+    margin: 50px auto 0;
+}
+.google-map {
+    position: absolute;
+}
+.map::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .3;
+    transition: all .3s linear;
+}
+.map:hover::after {
+    display: none;
+}
