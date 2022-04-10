@@ -22,6 +22,7 @@ header {
     font: 14px 'Poppins', sans-serif;
     font-weight: bold;
     color: #fff;
+    text-transform: capitalize;
 }
 .nav-wrapper {
     width: 50%;
@@ -118,4 +119,49 @@ header {
 }
 .map:hover::after {
     display: none;
+}
+/* middle section */
+.middle-section {
+    margin-top: 56px;
+}
+.middle-section-wrapper {
+    max-width: 1130px;
+    width: 90%;
+    margin: 0 auto;
+}
+.title-box h4 {
+    font: 14px 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #5863F8;
+    text-transform: uppercase;
+}
+.title-box h3 {
+    width: 378px;
+    font: 42px 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 56px;
+}
+/* form section */
+.form-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-inp {
+    width: 66%;
+}
+#user-info-descr {
+    height: 288px;
+    width: 100%;
+    padding: 20px;
+}
+.right-inp {
+    width: 32%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.left-column-item {
+    height: 60px;
+    padding: 20px;
 }
