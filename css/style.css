@@ -221,3 +221,31 @@ header::after {
     color: #fff;
     font: 24px;
 }
+/* botton section */
+.title-box-wrapper {
+    max-width: 1130px;
+    width: 90%;
+    margin: 90px auto 0;
+}
+.title-box2 h4 {
+    font: 14px 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #5863F8;
+    text-transform: uppercase;
+}
+.title-box2 h3 {
+    width: 570px;
+    font: 42px 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 56px;
+}
+.image-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+/* footer */
+.footer-wrapper {
+    height: 395px;
+    background-color: #121212;
+}
