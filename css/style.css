@@ -5,6 +5,7 @@ header {
     width: 100%;
     z-index: 9;
     background-image: url(../img/header-bg.jpg);
+    background-size: cover;
     height: 324px;
     width: 100%;
     display: flex;
