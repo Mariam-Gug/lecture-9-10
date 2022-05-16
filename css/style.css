@@ -220,7 +220,7 @@ header::after {
 }
 .contact-icon {
     color: #fff;
-    font: 24px;
+    font-size: 24px;
 }
 /* botton section */
 .title-box-wrapper {
@@ -248,12 +248,110 @@ header::after {
 }
 .image-wrap {
     width: 28%;
+    /* height: 352.8px; */
 }
 .image-wrap img {
     width: 100%;
+    display: block;
 }
 /* footer */
-.footer-wrapper {
-    height: 395px;
+footer {
+    padding: 90px 0 40px;
     background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-wrapper {
+    height: 265px;
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-text-box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text-block {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-text-block:nth-child(1) h4 {
+    width: 260px;
+    font: 24px 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+.footer-text-block:nth-child(1) p {
+    width: 260px;
+    font: 14px 'Poppins', sans-serif;
+    color: #B1B1B1;
+}
+.footer-icons {
+    width: 126px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-size {
+    font-size: 35px;
+}
+.fa-facebook {
+    color: #3B5998;
+}
+.fa-twitter-square {
+    color: #55ACEE;
+}
+.fa-google-plus-g {
+    color: #DC4E41;
+}
+.footer-text-block:nth-child(2),
+.footer-text-block:nth-child(3),
+.footer-text-block:nth-child(4) {
+    height: 155px;
+}
+.footer-text-block:nth-child(2) h5,
+.footer-text-block:nth-child(3) h5,
+.footer-text-block:nth-child(4) h5 {
+    font: 18px 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer-text-block:nth-child(2) ul,
+.footer-text-block:nth-child(3) ul,
+.footer-text-block:nth-child(4) ul {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-blue-li {
+    color: #5863F8;
+    font: 14px 'Poppins', sans-serif;
+}
+.footer-white-li {
+    color:#fff;
+    font: 14px 'Poppins', sans-serif;
+}
+.footer-envelope,
+.footer-phone,
+.footer-dot {
+    color: #5863F8;
+}
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-copyright p {
+    font: 14px 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 200;
+}
+.footer-copyright a {
+    font: 14px 'Poppins', sans-serif;
+    color: #5863F8;
+    font-weight: 200;
 }
