@@ -38,10 +38,9 @@ header::after {
     text-transform: capitalize;
 }
 .nav-wrapper {
-    width: 50%;
+    width: 55%;
 }
 .list {
-    max-width: 550px;
     display: flex;
     justify-content: space-between;
 }
@@ -61,17 +60,14 @@ header::after {
     color: #fff;
 }
 /* contact title */
-.contact-text-wrapper {
+.contact-text {
     position: absolute;
     top: 145px;
-    width: 100%;
-    z-index: 2;
-}
-.contact-text {
     max-width: 1130px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     color: #fff;
+    z-index: 2;
 }
 .contact-text h2 {
     font: 42px 'Poppins', sans-serif;
@@ -88,6 +84,10 @@ header::after {
     font: 14px 'Poppins', sans-serif;
     color: #fff;
     text-transform: capitalize;
+}
+.devider {
+    display: flex;
+    align-items: center;
 }
 .devider::after {
     content: '';
@@ -132,7 +132,8 @@ header::after {
     text-transform: uppercase;
 }
 .title-box h3 {
-    width: 378px;
+    max-width: 378px;
+    width: 100%;
     font: 42px 'Poppins', sans-serif;
     font-weight: 900;
     line-height: 56px;
@@ -206,13 +207,16 @@ header::after {
 }
 .three-blocks li {
     text-align: center;
+}
+.three-blocks a {
+    text-align: center;
     font: 14px 'Poppins', sans-serif;
     color: #B1B1B1;
 }
 .blue-circle {
     height: 60px;
     width: 60px;
-    border-radius: 30px;
+    border-radius: 50%;
     background-color: #5863F8;
     display: flex;
     align-items: center;
@@ -235,7 +239,8 @@ header::after {
     text-transform: uppercase;
 }
 .title-box2 h3 {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     font: 42px 'Poppins', sans-serif;
     font-weight: 900;
     line-height: 56px;
@@ -263,8 +268,8 @@ footer {
     align-items: center;
 }
 .footer-wrapper {
-    height: 265px;
-    width: 1060px;
+    max-width: 1060px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -272,6 +277,7 @@ footer {
 }
 .footer-text-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer-text-block {
@@ -342,6 +348,7 @@ footer {
     color: #5863F8;
 }
 .footer-copyright {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
