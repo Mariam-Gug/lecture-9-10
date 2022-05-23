@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 
 /* header */
 header {
@@ -8,8 +15,12 @@ header {
     background-size: cover;
     height: 324px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 header::after {
     content: '';
@@ -27,9 +38,15 @@ header::after {
     padding-top: 30px;
     margin: 0 auto;
     z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .logo {
     font: 14px 'Poppins', sans-serif;
@@ -41,8 +58,12 @@ header::after {
     width: 55%;
 }
 .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .nav-a {
     font: 12px 'Poppins', sans-serif;
@@ -76,8 +97,12 @@ header::after {
 }
 .contact-text ul {
     margin-top: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font: 14px 'Poppins', sans-serif;
 }
 .contact-text a {
@@ -86,8 +111,12 @@ header::after {
     text-transform: capitalize;
 }
 .devider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .devider::after {
     content: '';
@@ -115,6 +144,8 @@ header::after {
     width: 100%;
     background-color: #000;
     opacity: .3;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
     transition: all .3s linear;
 }
 .map:hover::after {
@@ -141,8 +172,12 @@ header::after {
 /* form section */
 .form-box {
     margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .left-inp {
     width: 66%;
@@ -157,15 +192,38 @@ header::after {
 }
 .right-inp {
     width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .input-block {
     height: 60px;
     padding: 20px;
     background-color: #F8F8F8;
     border: 2px solid #E8E8E8;
+}
+.input-block::-webkit-input-placeholder, .text-box::-webkit-input-placeholder {
+    font: 13px 'Poppins', sans-serif;
+    color: #CECECE;
+}
+.input-block::-moz-placeholder, .text-box::-moz-placeholder {
+    font: 13px 'Poppins', sans-serif;
+    color: #CECECE;
+}
+.input-block:-ms-input-placeholder, .text-box:-ms-input-placeholder {
+    font: 13px 'Poppins', sans-serif;
+    color: #CECECE;
+}
+.input-block::-ms-input-placeholder, .text-box::-ms-input-placeholder {
+    font: 13px 'Poppins', sans-serif;
+    color: #CECECE;
 }
 .input-block::placeholder,
 .text-box::placeholder {
@@ -191,14 +249,25 @@ header::after {
     max-width: 1130px;
     width: 90%;
     margin: 50px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .three-blocks {
     width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .three-blocks h5 {
     margin-top: 15px;
@@ -218,9 +287,15 @@ header::after {
     width: 60px;
     border-radius: 50%;
     background-color: #5863F8;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .contact-icon {
     color: #fff;
@@ -247,9 +322,14 @@ header::after {
 }
 .image-wrapper {
     margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .image-wrap {
     width: 28%;
@@ -263,28 +343,53 @@ header::after {
 footer {
     padding: 90px 0 40px;
     background-color: #121212;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .footer-wrapper {
     max-width: 1060px;
     width: 90%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .footer-text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .footer-text-block {
     height: 190px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .footer-text-block:nth-child(1) h4 {
     width: 260px;
@@ -299,8 +404,12 @@ footer {
 }
 .footer-icons {
     width: 126px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .icon-size {
     font-size: 35px;
@@ -330,9 +439,16 @@ footer {
 .footer-text-block:nth-child(3) ul,
 .footer-text-block:nth-child(4) ul {
     height: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .footer-blue-li {
     color: #5863F8;
@@ -349,8 +465,12 @@ footer {
 }
 .footer-copyright {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .footer-copyright p {
     font: 14px 'Poppins', sans-serif;
